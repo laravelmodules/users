@@ -11,7 +11,6 @@ use Modules\Users\Models\Access\User\Traits\UserSendPasswordReset;
 use Modules\Users\Models\Access\User\Traits\Attribute\UserAttribute;
 use Modules\Users\Models\Access\User\Traits\Relationship\UserRelationship;
 
-use Modules\Teams\Models\CanJoinTeams;
 /**
  * Class User.
  */
@@ -24,7 +23,6 @@ class User extends Authenticatable
         UserAttribute,
         UserRelationship,
         UserSendPasswordReset;
-    use CanJoinTeams;
 
     /**
      * The database table used by the model.
